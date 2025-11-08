@@ -1,0 +1,186 @@
+/* Importing Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(180deg, #fdfbff, #f0f8ff);
+    color: #333;
+}
+
+/* Header Styling */
+header {
+    position: relative;
+    background: linear-gradient(90deg, #ffb6c1, #87cefa);
+    padding: 25px 0;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    color: #fff;
+    border-bottom: 4px solid #fff;
+}
+
+/* 🔹 Profile Picture Box - smaller like a passport photo */
+header .image-box {
+    width: 130px;
+    height: 160px;
+    border: 3px solid white;
+    border-radius: 8px;
+    margin: 0 auto 15px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+header .image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Header Title */
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Navigation */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 15px 0 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px 14px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.15);
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    transform: translateY(-3px);
+}
+
+/* Sections */
+section {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 12px;
+    margin: 40px auto;
+    max-width: 1100px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+/* Containers */
+.education-container, .career-container, .hobbies-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+}
+
+/* Cards */
+.education-item, .career-item, .hobby-item {
+    flex: 1 1 calc(30% - 25px);
+    background-color: #f5f5f5;
+    border: 2px solid transparent;
+    box-sizing: border-box;
+    padding: 15px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.career-item {
+    flex: 1 1 calc(45% - 25px);
+}
+
+/* Hover effects */
+.education-item:hover, .career-item:hover, .hobby-item:hover {
+    background-color: #fff0f5;
+    border-color: #87cefa;
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Titles */
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 26px;
+    color: #ff69b4;
+    text-shadow: 1px 1px #f0f0f0;
+    margin-bottom: 20px;
+}
+
+/* 🔹 Hobby Images - smaller square-like style */
+.hobby-item img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+/* Hobby Text */
+.hobby-item h3 {
+    font-size: 16px;
+    color: #023e8a;
+    margin: 0;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(90deg, #ffb6c1, #87cefa);
+    color: white;
+    font-size: 16px;
+    border-top: 4px solid #fff;
+    box-shadow: 0 -4px 10px rgba(0,0,0,0.1);
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: #007BFF;
+    transition: 0.3s ease;
+}
+
+a:hover {
+    color: #ff69b4;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+    .education-item, .career-item, .hobby-item {
+        flex: 1 1 100%;
+    }
+
+    header .image-box {
+        width: 110px;
+        height: 140px;
+    }
+
+    .hobby-item img {
+        width: 100px;
+        height: 100px;
+    }
+}
